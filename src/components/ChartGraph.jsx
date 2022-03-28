@@ -1,6 +1,8 @@
 import React from "react";
-import { Box, Text } from "@chakra-ui/react";
-import { Line } from "react-chartjs-2";
+import { Box, Flex } from "@chakra-ui/react";
+import "chart.js/auto";
+import { Chart } from "react-chartjs-2";
+import { data, options } from "../data/ChartData";
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -12,6 +14,8 @@ import {
   Tooltip,
   Legend,
 } from "chart.js";
+import ChartHead from "./common/ChartHead";
+import SideInfo from "./common/SideInfo";
 
 ChartJS.register(
   CategoryScale,
@@ -23,14 +27,14 @@ ChartJS.register(
   Tooltip,
   Legend
 );
-const ChartGraph = () => {
+const ChartGraph = ({ valtexter, show, sidetexter }) => {
   return (
-    <Box width="100%">
+    <Box width="100%" mt="2rem">
       <Box mb="2rem">
         <Box
           bg="white"
           rounded="md"
-          boxShadow="md"
+          //   boxShadow="md"
           p="0.9rem"
           borderRadius="5px"
           fontSize="12px"
@@ -39,54 +43,18 @@ const ChartGraph = () => {
             xl: "90%",
           }}
         >
-          <Text fontSize="1rem" fontWeight="bold" p="1rem">
-            Sales Chart
-          </Text>
-
-          <Line
-            // data={saler}
-            options={{
-              // maintainAspectRatio: false,
-              title: {
-                display: true,
-                text: "Average Rainfall per month",
-                fontSize: 20,
-              },
-              legend: {
-                display: true,
-                position: "right",
-              },
-              animations: {
-                tension: {
-                  duration: 1000,
-                  easing: "linear",
-                  from: 1,
-                  to: 0,
-                  loop: false,
-                },
-              },
-              scales: {
-                y: {
-                  // defining min and max so hiding the dataset does not change scale range
-                  min: 0,
-                  max: 100,
-                  beginAtZero: true,
-                },
-                x: {
-                  type: "time",
-                  time: {
-                    unit: "day",
-                  },
-                },
-              },
-            }}
-            height={400}
-            width={600}
-          />
+          <Flex justifyContent="space-between" width="100%" alignItems="center">
+            <Box>
+              <ChartHead valtext={valtexter} showColor={show} />
+              <Chart type="line" data={data} options={options}  height={300}
+  width={790} borderLeft="1px sol black"/>
+            </Box>
+            <SideInfo sidetext={sidetexter}/>
+          </Flex>
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default ChartGraph
+export default ChartGraph;
