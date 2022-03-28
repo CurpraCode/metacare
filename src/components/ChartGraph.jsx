@@ -27,6 +27,7 @@ ChartJS.register(
   Tooltip,
   Legend
 );
+
 const ChartGraph = ({ valtexter, show, sidetexter }) => {
   return (
     <Box width="100%" mt="2rem">

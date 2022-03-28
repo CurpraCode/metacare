@@ -32,17 +32,29 @@ const Taber = () => {
       <TabPanels>
         <TabPanel>
           <Header />
-          <ChartGraph  valtexter="Average response Time" show="#F05D23"  sidetexter="Average Response Time"/>
-          <ChartGraph  valtexter="Replies per resolution " show="#3E68FF" sidetexter="Average Replies "/>
-          <ChartGraph  valtexter="Average resolution time" show="#FB6491" sidetexter="Average Resolution Rate"/>
-          <ChartGraph  valtexter="First contact resolution rate" show="#07C9E2" sidetexter="Average Contact Rate"/>
+          <ChartGraph
+            valtexter="Average response Time"
+            show="#F05D23"
+            sidetexter="Average Response Time"
+          />
+          <ChartGraph
+            valtexter="Replies per resolution "
+            show="#3E68FF"
+            sidetexter="Average Replies "
+          />
+          <ChartGraph
+            valtexter="Average resolution time"
+            show="#FB6491"
+            sidetexter="Average Resolution Rate"
+          />
+          <ChartGraph
+            valtexter="First contact resolution rate"
+            show="#07C9E2"
+            sidetexter="Average Contact Rate"
+          />
         </TabPanel>
-        <TabPanel>
-          <p>two!</p>
-        </TabPanel>
-        <TabPanel>
-          <p>three!</p>
-        </TabPanel>
+        <TabPanel></TabPanel>
+        <TabPanel></TabPanel>
       </TabPanels>
     </Tabs>
   );

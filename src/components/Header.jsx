@@ -7,19 +7,17 @@ import {
   InputGroup,
   InputLeftElement,
   Button,
-  Flex,
   Menu,
   MenuButton,
-  IconButton,
 } from "@chakra-ui/react";
-import { SearchIcon, ChevronDownIcon } from "@chakra-ui/icons";
+import { SearchIcon} from "@chakra-ui/icons";
 import { ReactComponent as Chevron } from "assets/Chevrondown.svg";
 
 const Header = () => {
   return (
     <HStack justifyContent="space-between" alignItems="center">
-      <Text fontWeight="bold">Efficiency Analytics</Text>
-      <HStack justifyContent="space-between" alignItems="center">
+      <Text fontWeight="bold" fontSize="1.5rem">Efficiency Analytics</Text>
+      <HStack justifyContent="space-between" alignItems="center" zIndex="-1">
         <HStack
           borderRight="2px solid #ECEBF5"
           justifyContent="space-between"
@@ -35,7 +33,7 @@ const Header = () => {
               />
               <Input
                 placeholder={`Search`}
-                size="lg"
+                size="md"
                 width="400px"
                 borderRadius="0.5rem"
                 bg="transparent"
@@ -61,7 +59,7 @@ const Header = () => {
               as={Button}
               border="1px solid #ECEBF5"
               borderRadius="0.5rem"
-              padding="1.5rem 1rem"
+              padding="1.3rem 1rem"
               rightIcon={<Chevron />}
               _hover={{ outline: "none" }}
               _active={{ outline: "none", bg: "none" }}

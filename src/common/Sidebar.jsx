@@ -37,13 +37,13 @@ const SidebarContent = ({ onClick }) => {
                 bg="none"
                 p="0.1rem"
                 _hover={{
-                  background: "rgb(254,215,226, 0.15)",
-                  color: "#DD1D5E",
+                 
+                  color: "#6837EF",
                   borderRadius: "10px",
                 }}
                 _active={{
                   background: "transparent",
-                  color: "#DD1D5E",
+                  color: "#6837EF",
                   borderRadius: "10px",
                 }}
               >
@@ -56,7 +56,7 @@ const SidebarContent = ({ onClick }) => {
                   }}
                   _active={{
                     background: "transparent",
-                    color: "#DD1D5E",
+                    color: "#6837EF",
                   }}
                 >
                   <Admin />
@@ -74,7 +74,7 @@ const SidebarContent = ({ onClick }) => {
                 bg="none"
                 p="0.1rem"
                 _hover={{
-                  color: "#DD1D5E",
+                  color: "#6837EF",
                   borderRadius: "10px",
                 }}
               >
@@ -87,7 +87,7 @@ const SidebarContent = ({ onClick }) => {
                   }}
                   _active={{
                     background: "transparent",
-                    color: "#DD1D5E",
+                    color: "#6837EF",
                   }}
                 >
                   <Know />
@@ -105,7 +105,7 @@ const SidebarContent = ({ onClick }) => {
                 bg="none"
                 p="0.1rem"
                 _hover={{
-                  color: "#DD1D5E",
+                  color: "#6837EF",
                   borderRadius: "10px",
                 }}
               >
@@ -118,7 +118,7 @@ const SidebarContent = ({ onClick }) => {
                   }}
                   _active={{
                     background: "transparent",
-                    color: "#DD1D5E",
+                    color: "#6837EF",
                   }}
                 >
                   <Train />
@@ -136,7 +136,7 @@ const SidebarContent = ({ onClick }) => {
                 bg="none"
                 p="0.1rem"
                 _hover={{
-                  color: "#DD1D5E",
+                  color: "#6837EF",
                   borderRadius: "10px",
                 }}
               >
@@ -149,7 +149,7 @@ const SidebarContent = ({ onClick }) => {
                   }}
                   _active={{
                     background: "transparent",
-                    color: "#DD1D5E",
+                    color: "#6837EF",
                   }}
                 >
                   <Agent />
@@ -167,7 +167,7 @@ const SidebarContent = ({ onClick }) => {
                 bg="none"
                 p="0.1rem"
                 _hover={{
-                  color: "#DD1D5E",
+                  color: "#6837EF",
                   borderRadius: "10px",
                 }}
               >
@@ -180,7 +180,7 @@ const SidebarContent = ({ onClick }) => {
                   }}
                   _active={{
                     background: "transparent",
-                    color: "#DD1D5E",
+                    color: "#6837EF",
                   }}
                 >
                   <Help />
@@ -198,7 +198,7 @@ const SidebarContent = ({ onClick }) => {
                 bg="none"
                 p="0.1rem"
                 _hover={{
-                  color: "#DD1D5E",
+                  color: "#6837EF",
                   borderRadius: "10px",
                 }}
               >
@@ -211,7 +211,7 @@ const SidebarContent = ({ onClick }) => {
                   }}
                   _active={{
                     background: "transparent",
-                    color: "#DD1D5E",
+                    color: "#6837EF",
                   }}
                 >
                   <Analytic />
@@ -228,12 +228,12 @@ const SidebarContent = ({ onClick }) => {
                     fontWeight="bold"
                     bg="none"
                     _hover={{
-                      color: "#DD1D5E",
+                      color: "#060213",
                       borderRadius: "10px",
                     }}
                     _active={{
                       background: "transparent",
-                      color: "#DD1D5E",
+                      color: "#060213",
                       borderRadius: "10px",
                     }}
                   >
@@ -250,12 +250,12 @@ const SidebarContent = ({ onClick }) => {
                     fontWeight="bold"
                     bg="none"
                     _hover={{
-                      color: "#DD1D5E",
+                      color: "#060213",
                       borderRadius: "10px",
                     }}
                     _active={{
                       background: "transparent",
-                      color: "#DD1D5E",
+                      color: "#060213",
                       borderRadius: "10px",
                     }}
                   >
@@ -272,12 +272,12 @@ const SidebarContent = ({ onClick }) => {
                     fontWeight="bold"
                     bg="none"
                     _hover={{
-                      color: "#DD1D5E",
+                      color: "#060213",
                       borderRadius: "10px",
                     }}
                     _active={{
                       background: "transparent",
-                      color: "#DD1D5E",
+                      color: "#060213",
                       borderRadius: "10px",
                     }}
                   >
@@ -294,12 +294,12 @@ const SidebarContent = ({ onClick }) => {
                     fontWeight="bold"
                     bg="none"
                     _hover={{
-                      color: "#DD1D5E",
+                      color: "#060213",
                       borderRadius: "10px",
                     }}
                     _active={{
                       background: "transparent",
-                      color: "#DD1D5E",
+                      color: "#060213",
                       borderRadius: "10px",
                     }}
                   >
