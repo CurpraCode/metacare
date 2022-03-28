@@ -10,7 +10,7 @@ const SideInfo = ({ sidetext }) => {
         borderRadius="0.5rem"
         mb="1rem"
       >
-        <Text>{sidetext}</Text>
+        <Text color="#696D8C">{sidetext}</Text>
         <Text fontWeight="bold">30 Mins</Text>
       </Box>
       <Box
@@ -19,7 +19,7 @@ const SideInfo = ({ sidetext }) => {
         p="2.5rem 1rem"
         borderRadius="0.5rem"
       >
-        <Text> Response Time</Text>
+        <Text color="#696D8C"> Response Time</Text>
         <Text fontWeight="bold">1Hour 30 Mins</Text>
       </Box>
     </Box>
