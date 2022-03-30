@@ -52,6 +52,11 @@ export const options = {
     yAxes: {
       min: 10,
       max: 50,
+      ticks: {
+        // forces step size to be 50 units
+        stepSize: 10,
+      },
+
       grid: {
         // display:false
       },
@@ -60,11 +65,9 @@ export const options = {
 
   plugins: {
     legend: {
-      display:false
+      display: false,
     },
   },
- 
 };
 
 export const labels = ChartData.map((val) => val.month);
-
