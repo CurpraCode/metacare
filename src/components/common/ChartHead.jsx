@@ -5,7 +5,7 @@ const ChartHead = ({valtext, showColor}) => {
   return (
     <Flex justifyContent="space-between" alignItems="center" m="1rem">
       <Flex alignItems="center">
-        <Text fontWeight="bold" mr="1rem">
+        <Text fontWeight="bold" mr="1rem" fontSize="1rem">
            {valtext}
         </Text>
         <Text

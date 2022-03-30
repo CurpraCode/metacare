@@ -18,7 +18,7 @@ import {
   DrawerContent,
   Flex,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+
 import { ReactComponent as Admin } from "../assets/adminicon.svg";
 import { ReactComponent as Know } from "../assets/knowledgeicon.svg";
 import { ReactComponent as Agent } from "../assets/agenticon.svg";
@@ -37,7 +37,6 @@ const SidebarContent = ({ onClick }) => {
                 bg="none"
                 p="0.1rem"
                 _hover={{
-                 
                   color: "#6837EF",
                   borderRadius: "10px",
                 }}
@@ -59,7 +58,7 @@ const SidebarContent = ({ onClick }) => {
                     color: "#6837EF",
                   }}
                 >
-                  <Admin />
+                  <Admin fill="#fff" />
                   <Text ml="0.7rem">Admin</Text>
                 </Button>
                 <AccordionIcon ml="4.5rem" />
@@ -183,7 +182,7 @@ const SidebarContent = ({ onClick }) => {
                     color: "#6837EF",
                   }}
                 >
-                  <Help />
+                  <Help fill="#6837ef" />
                   <Text ml="0.7rem">Help Center</Text>
                 </Button>
                 <AccordionIcon ml="3rem" />
@@ -215,97 +214,91 @@ const SidebarContent = ({ onClick }) => {
                   }}
                 >
                   <Analytic />
-                  <Text ml="0.7rem">Analytics</Text>
+                  <Text ml="0.7rem" color="#6837EF">
+                    Analytics
+                  </Text>
                 </Button>
                 <AccordionIcon ml="4rem" />
               </AccordionButton>
               <AccordionPanel>
-                <Link to="/ultra">
-                  <Button
-                    onClick={onClick}
-                    borderBottom="0px"
-                    fontSize="0.8rem"
-                    fontWeight="bold"
-                    bg="none"
-                    _hover={{
-                      color: "#060213",
-                      borderRadius: "10px",
-                    }}
-                    _active={{
-                      background: "transparent",
-                      color: "#060213",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    Teams
-                  </Button>
-                </Link>
+                <Button
+                  onClick={onClick}
+                  borderBottom="0px"
+                  fontSize="0.8rem"
+                  fontWeight="bold"
+                  bg="none"
+                  _hover={{
+                    color: "#060213",
+                    borderRadius: "10px",
+                  }}
+                  _active={{
+                    background: "transparent",
+                    color: "#060213",
+                    borderRadius: "10px",
+                  }}
+                >
+                  Teams
+                </Button>
               </AccordionPanel>
               <AccordionPanel>
-                <Link to="/ultra">
-                  <Button
-                    onClick={onClick}
-                    borderBottom="0px"
-                    fontSize="0.8rem"
-                    fontWeight="bold"
-                    bg="none"
-                    _hover={{
-                      color: "#060213",
-                      borderRadius: "10px",
-                    }}
-                    _active={{
-                      background: "transparent",
-                      color: "#060213",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    Knowledge Base
-                  </Button>
-                </Link>
+                <Button
+                  onClick={onClick}
+                  borderBottom="0px"
+                  fontSize="0.8rem"
+                  fontWeight="bold"
+                  bg="none"
+                  _hover={{
+                    color: "#060213",
+                    borderRadius: "10px",
+                  }}
+                  _active={{
+                    background: "transparent",
+                    color: "#060213",
+                    borderRadius: "10px",
+                  }}
+                >
+                  Knowledge Base
+                </Button>
               </AccordionPanel>
               <AccordionPanel>
-                <Link to="/ultra">
-                  <Button
-                    onClick={onClick}
-                    borderBottom="0px"
-                    fontSize="0.8rem"
-                    fontWeight="bold"
-                    bg="none"
-                    _hover={{
-                      color: "#060213",
-                      borderRadius: "10px",
-                    }}
-                    _active={{
-                      background: "transparent",
-                      color: "#060213",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    Training SAM
-                  </Button>
-                </Link>
+                <Button
+                  onClick={onClick}
+                  borderBottom="0px"
+                  fontSize="0.8rem"
+                  fontWeight="bold"
+                  bg="none"
+                  _hover={{
+                    color: "#060213",
+                    borderRadius: "10px",
+                  }}
+                  _active={{
+                    background: "transparent",
+                    color: "#060213",
+                    borderRadius: "10px",
+                  }}
+                >
+                  Training SAM
+                </Button>
               </AccordionPanel>
               <AccordionPanel>
-                <Link to="/ultra">
-                  <Button
-                    onClick={onClick}
-                    borderBottom="0px"
-                    fontSize="0.8rem"
-                    fontWeight="bold"
-                    bg="none"
-                    _hover={{
-                      color: "#060213",
-                      borderRadius: "10px",
-                    }}
-                    _active={{
-                      background: "transparent",
-                      color: "#060213",
-                      borderRadius: "10px",
-                    }}
-                  >
-                    Help Center
-                  </Button>
-                </Link>
+                <Button
+                  onClick={onClick}
+                  borderBottom="0px"
+                  fontSize="0.8rem"
+                  fontWeight="bold"
+                  bg="none"
+                  _hover={{
+                    color: "#060213",
+                    borderRadius: "10px",
+                  }}
+                  _active={{
+                    background: "transparent",
+                    color: "#060213",
+                    borderRadius: "10px",
+                  }}
+                >
+                  Help Center
+                </Button>
               </AccordionPanel>
             </AccordionItem>
           </Accordion>
@@ -332,7 +325,7 @@ const SideBar = ({ isOpen, variant, onClose }) => {
         m="1rem 2rem"
         border="1px solid  #e5e9f2"
         borderRadius="10px"
-        p="1rem 2rem"
+        p="0.8rem 1.8rem"
         justifyContent="space-between"
       >
         <Box></Box>
@@ -340,7 +333,9 @@ const SideBar = ({ isOpen, variant, onClose }) => {
           <Text fontSize="0.8rem" color="#000" fontWeight="bold">
             Metacare
           </Text>
-          <Text fontSize="0.5rem">adeyinka@metacare.app</Text>
+          <Text fontSize="0.6rem" color="#696D8C" fontWeight={400}>
+            adeyinka@metacare.app
+          </Text>
         </Box>
       </Flex>
 
@@ -350,29 +345,30 @@ const SideBar = ({ isOpen, variant, onClose }) => {
     <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
       <DrawerOverlay>
         <DrawerContent bg="#fff">
-          <HStack alignitems="center" >
+          <HStack alignitems="center">
             <DrawerCloseButton
               color="#e5e9f2"
               _active={{
                 outline: "none",
               }}
             />
-            
-              <DrawerHeader>
-                <Box
-                  mb="2rem"
-                  m="1rem 2rem"
-                  border="1px solid  #e5e9f2"
-                  borderRadius="10px"
-                  p="1rem 2rem"
-                >
-                  <Text fontSize="0.9rem" color="#000">
-                    Metacare
-                  </Text>
-                  <Text fontSize="0.5rem">adeyinka@metacare.app</Text>
-                </Box>
-              </DrawerHeader>
-         
+
+            <DrawerHeader>
+              <Box
+                mb="2rem"
+                m="1rem 2rem"
+                border="1px solid  #e5e9f2"
+                borderRadius="10px"
+                p="0.8rem 1.8rem"
+              >
+                <Text fontSize="0.9rem" color="#000">
+                  Metacare
+                </Text>
+                <Text fontSize="0.6rem" color="#696D8C" fontWeight="400">
+                  adeyinka@metacare.app
+                </Text>
+              </Box>
+            </DrawerHeader>
           </HStack>
 
           <DrawerBody

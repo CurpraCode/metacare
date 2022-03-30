@@ -23,7 +23,6 @@ const Header = ({ showSidebarButton = true, onShowSidebar }) => {
       top={0}
       right={0}
       width="100%"
-      // zIndex="3"
       bg="#fff"
       p={4}
       alignitems="center"

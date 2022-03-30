@@ -1,6 +1,5 @@
 import React from "react";
 import {
-  Box,
   HStack,
   Input,
   Text,
@@ -10,22 +9,24 @@ import {
   Menu,
   MenuButton,
 } from "@chakra-ui/react";
-import { SearchIcon} from "@chakra-ui/icons";
+import { SearchIcon } from "@chakra-ui/icons";
 import { ReactComponent as Chevron } from "assets/Chevrondown.svg";
 
 const Header = () => {
   return (
     <HStack justifyContent="space-between" alignItems="center">
-      <Text fontWeight="bold" fontSize="1.5rem">Efficiency Analytics</Text>
+      <Text fontWeight="bold" fontSize="1.5rem">
+        Efficiency Analytics
+      </Text>
       <HStack justifyContent="space-between" alignItems="center" zIndex="-1">
         <HStack
           borderRight="2px solid #ECEBF5"
           justifyContent="space-between"
           alignItems="center"
-          mr="3rem"
-          pr="3rem"
+          mr="2rem"
+          pr="2rem"
         >
-          <HStack mr="2rem" alignItems="center">
+          <HStack mr="1rem" alignItems="center">
             <InputGroup>
               <InputLeftElement
                 pointerEvents="none"
@@ -52,7 +53,7 @@ const Header = () => {
           <Menu
             _hover={{ outline: "none" }}
             _active={{ outline: "none", bg: "none" }}
-            pr="3rem"
+            pr="1rem"
           >
             <MenuButton
               backgroundColor="white"
@@ -80,6 +81,7 @@ const Header = () => {
           color="#fff"
           fontWeight="bold"
           borderRadius="10px"
+          p="0.7rem 1.7rem"
           _focus={{
             outline: 0,
           }}

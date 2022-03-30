@@ -1,4 +1,4 @@
-const ChartData = [
+export const ChartData = [
   {
     id: 1,
     month: "Jan",
@@ -66,16 +66,5 @@ export const options = {
  
 };
 
-const labels = ChartData.map((val) => val.month);
+export const labels = ChartData.map((val) => val.month);
 
-export const data = {
-  labels,
-  datasets: [
-    {
-  
-      data: ChartData.map((val) => val.valNum),
-      borderColor: " #F05D23",
-      backgroundColor: "rgba(255, 99, 132, 0.1)",
-    },
-  ],
-};
